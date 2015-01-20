@@ -1,0 +1,2 @@
+alias aa='vim /src/dots/aliases && source /src/dots/aliases'
+alias ll='ls -lah'
