@@ -12,15 +12,26 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" autocompletion nb: doesn't work yet
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'ucompleteme'
+
+"navigation
+Plugin 'scrooloose/nerdtree'
+"syntax highlighting
 Plugin 'scrooloose/syntastic'
+"search whole repo content
+Plugin 'rking/ag.vim'
+"path centered search for files
+Plugin 'Command-T'
 
 call vundle#end()
 
-let g:UltiSnipsExpandTrigger="<c-s>"
+let g:UltiSnipsExpandTrigger="<c-space>"
 let g:UltiSnipsJumpForwardTrigger="<c-s>"
 let g:UltiSnipsJumpBackwardTrigger="<c-x>"
+
 
 " set file encodings
 if has("multi_byte")
@@ -135,11 +146,21 @@ nnoremap <C-H> <C-W><C-H>
 " command-T make matched show near the prompt
 let g:CommandTMatchWindowReverse = 1
 
+" command-T cancel listing
+let g:CommandTCancelMap=['<ESC>','<C-c>']
+
 " map CommandTFlush to F5
 noremap <F5> :CommandTFlush<CR>
 
 " let me hide non-saved buffers (vim will still warn)
 set hidden
+
+" open nerdtree automatically when vim starts up
+" autocmd vimenter * NERDTree
+
+" open nerdtree automatically when vim starts up if no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " open nerdtree
 let NERDTreeQuitOnOpen=1

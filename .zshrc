@@ -46,7 +46,11 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git encode64 lol nyan yum)
+plugins=(osx common-aliases sudo git git-flow tmux tmuxinator rails aws encode64 lol)
+
+# Options for ohmyzsh tmux plugin
+ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOCONNECT="true"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,6 +69,7 @@ alias ll="ls -lah"
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias zshrc="vim ~/.zshrc && reload"
 alias aws="/user/local/bin/aws"
+alias ghelp="cat ~/src/dotfiles/git-cheatsheet/gistfile1.txt"
 
 #fixes C-s in mac os and some other bindings
 stty start undef stop undef
