@@ -65,11 +65,8 @@ __git_files () {
 	    _wanted files expl 'local files' _files     
 }
 
-alias ll="ls -lah"
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias zshrc="vim ~/.zshrc && reload"
-alias aws="/user/local/bin/aws"
-alias ghelp="cat ~/src/dotfiles/git-cheatsheet/gistfile1.txt"
 
 #fixes C-s in mac os and some other bindings
 stty start undef stop undef
@@ -77,3 +74,6 @@ stty -ixon -ixoff
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 DOCKER_HOST=tcp://localhost:4243
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

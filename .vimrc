@@ -17,6 +17,9 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ucompleteme'
 
+Plugin 'surround.vim'
+Plugin 'VimNotes'
+
 "navigation
 Plugin 'scrooloose/nerdtree'
 "syntax highlighting

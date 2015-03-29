@@ -533,7 +533,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 119 924 485 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>131 73 650 476 0 0 1280 777 </string>
+	<string>152 50 650 476 0 0 1280 800 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1099,7 +1099,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>1</integer>
 			<key>Scrollback Lines</key>
 			<integer>1000</integer>
 			<key>Scrollback With Status Bar</key>
@@ -2053,7 +2053,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-02-05T01:06:59Z</date>
+	<date>2015-02-08T07:44:41Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2083,7 +2083,7 @@
 	<key>UseCompactLabel</key>
 	<true/>
 	<key>UseLionStyleFullscreen</key>
-	<true/>
+	<false/>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
