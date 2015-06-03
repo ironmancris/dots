@@ -1,0 +1,41 @@
+#!/bin/sh
+
+cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
+
+$cli set general.dont_remap_apple_keyboard 1
+/bin/echo -n .
+$cli set remap.programmer.backtick_underscore 1
+/bin/echo -n .
+$cli set remap.swapcolons 1
+/bin/echo -n .
+$cli set remap.return2controlL_return 1
+/bin/echo -n .
+$cli set private.swap_insert_and_f7 1
+/bin/echo -n .
+$cli set remap.fkeys_to_consumer_f1 1
+/bin/echo -n .
+$cli set remap.f13_to_volumemute_all 1
+/bin/echo -n .
+$cli set remap.option_brackets_to_command_shift_brackets 1
+/bin/echo -n .
+$cli set remap.f15_to_volumeup_all 1
+/bin/echo -n .
+$cli set remap.f5f6_to_volumedownup_quarter 1
+/bin/echo -n .
+$cli set remap.pc_application2controlL 1
+/bin/echo -n .
+$cli set remap.programmer.shifts_parens 1
+/bin/echo -n .
+$cli set remap.simultaneouskeypresses_ss_to_capslock 1
+/bin/echo -n .
+$cli set remap.f14_to_volumedown_all 1
+/bin/echo -n .
+$cli set remap.simple_vi_mode 1
+/bin/echo -n .
+$cli set remap.swap_number_and_symbol 1
+/bin/echo -n .
+$cli set remap.controlR2fn 1
+/bin/echo -n .
+$cli set remap.space_to_homerow_numbers 1
+/bin/echo -n .
+/bin/echo

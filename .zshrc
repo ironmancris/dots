@@ -77,3 +77,6 @@ DOCKER_HOST=tcp://localhost:4243
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Added the NPM binaries
+export PATH="/usr/local/share/npm/bin:$PATH"

@@ -17,6 +17,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ucompleteme'
 
+Plugin 'fugitive.vim'
 Plugin 'surround.vim'
 Plugin 'VimNotes'
 
@@ -145,12 +146,16 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+set wildignore+=node_modules,vendor,vendors
 
 " command-T make matched show near the prompt
 let g:CommandTMatchWindowReverse = 1
 
 " command-T cancel listing
 let g:CommandTCancelMap=['<ESC>','<C-c>']
+
+" command-T file scanner
+let g:CommandTMaxDepth=8
 
 " map CommandTFlush to F5
 noremap <F5> :CommandTFlush<CR>
@@ -240,3 +245,7 @@ function! RefreshBrowser()
 endfunction
 		
 nmap <leader>c :call RefreshBrowser()<CR>
+
+" highlight lines after 80
+let &colorcolumn=join(range(81,999),",")
+
